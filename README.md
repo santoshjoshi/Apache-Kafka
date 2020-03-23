@@ -91,4 +91,4 @@ Apache Kafka Interview Questions
 ### Kafka Broker Logging Configuration
 1. How will you debug any issue with Kafka? What are various log files used by Kafka broker.
 
-[Originally Added To]: https://whiteboardtalks.com/
+Originally Added To:  https://whiteboardtalks.com/
