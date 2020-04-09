@@ -1,4 +1,4 @@
-# Kafka-interview-questions
+# Kafka Interview Questions
 Apache Kafka Interview Questions
 
 ### Kafka Basics
