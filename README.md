@@ -29,6 +29,7 @@ Offsets are committed by consumers to kafka cluster using auto-commit or by comm
 2. Why is Kafka So Fast
    https://www.freecodecamp.org/news/what-makes-apache-kafka-so-fast-a8d4f94ab145/
 3. What is Zero copy approach
+4. What is the anatomy of a Kafka Message or What does a kafka message in a topic contains.
 
 ### Kafka Topology
 1. Explain the topology of Apache KafkaHow many nodes of Apache Kafka
@@ -42,14 +43,14 @@ Offsets are committed by consumers to kafka cluster using auto-commit or by comm
 9. What is disk space usage?
 
 ### Kafka Topics
-1. Explain the anatomy of topic
-2. Topics
-     Partitions
-     Offsets
-     Log 
-     Log Segments
-     Log compaction
-
+* Explain the anatomy of topic
+* Topics. 
+    * Compression
+    * Partitions
+    * Offsets
+    * Log 
+    * Log Segments
+    * Log compaction
 
 ### Kafka Availability
 1. What if a Kafka node dies out. Is there any monitoring in place. How much time would it take to find out a missing node?
@@ -72,17 +73,16 @@ Have documented some of the things here
 [Increasing Replicas](https://whiteboardtalks.com/how-to-increase-replication-factor-for-a-kafka-topic/)
 
 
-
-
 ### Kafka Producer Configuration or Tuning Kafka Producer
-1. Describe the producer configuration you need to take care for configuring Kafka Producer. 
-   Compression
-   Batch size
-   Sync or Async
-   linger.ms
-   retry.backoff.ms
-   max.in.flight.requests.per.connection
-   Acks
+* Describe the producer configuration you need to take care for configuring Kafka Producer. 
+    * Compression
+    * Compression
+    * Batch size
+    * Sync or Async
+    * linger.ms
+    * retry.backoff.ms
+    * max.in.flight.requests.per.connection
+    * Acks
 
 ### Kafka Manager
 1. What is an in-sync replica and how it differs from normal replica
@@ -92,8 +92,7 @@ Have documented some of the things here
 
 ### Kafka provisioning & Installation
 1. How are you installing Kafka? 
-2. How are you provisioning Kafka in cloud?
-    What tools are you using , packer, terraform, anisble…?
+2. How are you provisioning Kafka in cloud? What tools are you using, packer, terraform, anisble... and How
 3. How often do you make changes to prod Kafka?
 4. Are you using Docker Is Zookeeper bundled in the same container?
 
