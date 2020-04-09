@@ -9,7 +9,12 @@ Apache Kafka Interview Questions
 4. What is a consumer group
 5. What is an offset
 6. What are the different ways to commit an offset?
-7. What is the importance of __consumer_offsets topic
+
+#### What is the importance of __consumer_offsets topic
+
+Offset is basically a pointer that specifies till what position the data has been consumed or produced for a given topic and partition. All Kafka offsets are stored on an internal topic named **__consumer_offsets** inside Kafka’s cluster. 
+Offsets are committed by consumers to kafka cluster using auto-commit or by committing manually on code. The commit is analogous as relational database commits.
+
 8. Can two consumers consume from the same topic?
 9. What is the benefit of partitioning?
 10. What is backpressure?
@@ -53,6 +58,21 @@ Apache Kafka Interview Questions
 4. What happens to the producer when a broker is down. How are you handling this in Producer?
 5. What happens when a broker is down and no ISR is available
 6. What is the average downtime in a month
+
+#### How to increase replication factor for a topic
+
+Increasing replication is a 4 step process that includes
+
+1. Check existing partition assignment
+2. Create a custom reassignment plan ( a JSON file)
+3. Do the reassignment process
+4. Verify the assignments
+
+Have documented some of the things here 
+[Increating Replicas](https://whiteboardtalks.com/how-to-increase-replication-factor-for-a-kafka-topic/)
+
+
+
 
 ### Kafka Producer Configuration or Tuning Kafka Producer
 1. Describe the producer configuration you need to take care for configuring Kafka Producer. 
