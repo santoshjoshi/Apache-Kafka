@@ -69,7 +69,7 @@ Increasing replication is a 4 step process that includes
 4. Verify the assignments
 
 Have documented some of the things here 
-[Increating Replicas](https://whiteboardtalks.com/how-to-increase-replication-factor-for-a-kafka-topic/)
+[Increasing Replicas](https://whiteboardtalks.com/how-to-increase-replication-factor-for-a-kafka-topic/)
 
 
 
