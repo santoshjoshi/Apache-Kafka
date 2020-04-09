@@ -96,17 +96,30 @@ Have documented some of the things here
     What tools are you using , packer, terraform, anisble…?
 3. How often do you make changes to prod Kafka?
 4. Are you using Docker Is Zookeeper bundled in the same container?
-    How are you monitoring Kafka and zookeeper?
+
+#### How are you monitoring Kafka?
+
+Monitoring kafka may involves
+
+* Broker Monitoring
+    * Infra Monitoring
+        * Disk
+        * CPU
+        * Memory
+        * Network/ Bandwidt 
+    * Producer Monitoring
+    * Consumer Monitoring
+        * Consumer Offset Monitoring or Consumer Group Latency Monitoring
 
 ### Kafka & Zookeeper Backup and Restore
-1. Are you backing up Kafka’s data? Are you backing up Kafka’s topic configurations
-    Any Tools you have used for backing and restore of Kafka
-    Burry.sh  https://github.com/mhausenblas/burry.sh
-              https://jobs.zalando.com/tech/blog/backing-up-kafka-zookeeper/
-              Uses https://github.com/spredfast/kafka-connect-s3 to take the backup of a topic
-              https://medium.com/@Pinterest_Engineering/zookeeper-resilience-at-pinterest-adfd8acf2a6b
-2. Uses Exhibitor UI for backing up Zookeeper 
-3. Uses https://github.com/spredfast/kafka-connect-s3 to take backup of a topic 
+* Are you backing up Kafka’s data? Are you backing up Kafka’s topic configurations
+* Any Tools you have used for backing and restore of Kafka
+    * Burry.sh  https://github.com/mhausenblas/burry.sh
+    * https://jobs.zalando.com/tech/blog/backing-up-kafka-zookeeper/
+    * Uses https://github.com/spredfast/kafka-connect-s3 to take the backup of a topic
+    * https://medium.com/@Pinterest_Engineering/zookeeper-resilience-at-pinterest-adfd8acf2a6b
+* Uses Exhibitor UI for backing up Zookeeper 
+* Uses https://github.com/spredfast/kafka-connect-s3 to take backup of a topic 
 
 ### Kafka Broker Logging Configuration
 1. How will you debug any issue with Kafka? What are various log files used by Kafka broker.
