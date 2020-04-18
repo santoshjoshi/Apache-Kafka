@@ -17,7 +17,7 @@ Offsets are committed by consumers to kafka cluster using auto-commit or by comm
 
 #### Can two consumers consume from the same topic?
 
-It depends on the Group Id. As long as the consumers belong to different Group Id they can consume from the same topic. In other words, A message within topic is consumed by only one consumer in consumer group. In order to process message by multiple consumers we need to place it in different consumer group.
+It depends on the Group Id. As long as the consumers belong to different Group Id they can consume from the same topic. In other words, A message within the topic is consumed by only one consumer in a consumer group. In order to process a message by multiple consumers, we need to place it in a different consumer group.
 
 9. What is the benefit of partitioning?
 10. What is backpressure?
