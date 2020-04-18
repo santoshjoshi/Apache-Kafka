@@ -15,7 +15,10 @@ Apache Kafka Interview Questions
 Offset is basically a pointer that specifies till what position the data has been consumed or produced for a given topic and partition. All Kafka offsets are stored on an internal topic named **__consumer_offsets** inside Kafka’s cluster. 
 Offsets are committed by consumers to kafka cluster using auto-commit or by committing manually on code. The commit is analogous as relational database commits.
 
-8. Can two consumers consume from the same topic?
+#### Can two consumers consume from the same topic?
+
+It depends on the Group Id. As long as the consumers belong to different Group Id they can consume from the same topic. In other words, A message within topic is consumed by only one consumer in consumer group. In order to process message by multiple consumers we need to place it in different consumer group.
+
 9. What is the benefit of partitioning?
 10. What is backpressure?
 
