@@ -9,6 +9,7 @@ Apache Kafka Interview Questions
 4. What is a consumer group
 5. What is an offset
 6. What are the different ways to commit an offset?
+7. Does Kafka provides ordering guarantees? 
 
 #### What is the importance of __consumer_offsets topic
 
