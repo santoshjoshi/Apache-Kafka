@@ -21,6 +21,10 @@ Apache Kafka Interview Questions
 6. What are the different ways to commit an offset?
 7. Does Kafka provides ordering guarantees? 
 
+#### How offsets are stored in Kafka
+
+Kafka stores offset in an internal topic( **__consumer_offsets** ). The offset is generally a key value pair where key is **<TOPIC,PARTITION,CONSUMER_GROUP_ID>** and the value is **offset**
+
 #### What is the importance of __consumer_offsets topic
 
 Offset is basically a pointer that specifies till what position the data has been consumed or produced for a given topic and partition. All Kafka offsets are stored on an internal topic named **__consumer_offsets** inside Kafka’s cluster. 
