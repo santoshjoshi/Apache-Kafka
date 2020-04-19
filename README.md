@@ -6,7 +6,17 @@ Apache Kafka Interview Questions
 1. What is Apache Kafka
 2. What are topics and partitions 
 3. What are various components of Kafka
-4. What is a consumer group
+
+#### What is a consumer group
+
+* A consumer group is a set of related consumers
+* Consumers from same group cannot read from same topic's partion.
+* Consumers within a consumer group use GroupCordinator and ConsumerCordinator to assign a partion to a consumer. Each consumer get a "fair share” of partion
+* Consumer group maintains its offset per topic partition.
+* If there are more consumers then partitions, the extra consumers remain idle until some consumer dies.
+
+4. How do you create consumer groups
+
 5. What is an offset
 6. What are the different ways to commit an offset?
 7. Does Kafka provides ordering guarantees? 
@@ -26,6 +36,8 @@ It depends on the Group Id. As long as the consumers belong to different Group I
 ### Kafka Monitoring
 1. How are you Monitoring Apache Kafka? Have you used Kafka Manager
 2. Kafka exposes metrics are you using it or plotting it somewhere if yes the how?
+
+
 
 ### Kafka Internals
 1. How Kafka stores its data.
