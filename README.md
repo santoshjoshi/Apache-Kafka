@@ -1,10 +1,38 @@
 # Kafka Interview Questions
 Apache Kafka Interview Questions
 
-### Kafka Basics
+### What is Apache Kafka
 
-1. What is Apache Kafka
-2. What are topics and partitions 
+Apache Kafka is an open-source distributed streaming platform that is used to build real-time data pipelines and streaming applications. Kafka allows you to publish and subscribe to streams of records, similar to a message queue or enterprise messaging system.
+
+Kafka is designed to be highly scalable, fault-tolerant, and durable. It is also very fast, capable of handling thousands of messages per second. 
+
+#### What are Core components
+
+The core components of Kafka are:
+
+- Kafka brokers: these store and manage the streams of records.
+- Kafka clients: these are used to produce and consume the records.
+
+### What are topics and partitions 
+
+#### Topics
+In Apache Kafka, a topic is a category or feed name to which messages are published. Topics are partitioned and distributed across the Kafka cluster for scalability and fault tolerance. Each partition of a topic is replicated across multiple brokers for redundancy.
+
+#### Partitions
+
+Partitions are the units of parallelism in Kafka. They allow the topic to be split into multiple smaller, more manageable segments. A partition is an ordered, immutable sequence of records that acts as a log. Messages in a partition are assigned a unique offset, which is used to identify their position within the partition.
+
+When a producer publishes a message to a Kafka topic, the message is assigned to a partition based on a configurable partitioning strategy. The partition to which a message is assigned depends on factors such as the key of the message, the number of partitions in the topic, and the load balancing of the brokers.
+
+Consumers can read messages from one or more partitions of a topic, in parallel. Each consumer reads from a unique offset in a partition.
+
+
+Below is a diagram showing the relationship between topics and partitions in Kafka:
+
+![Kafka Topics and Partitions](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/07/Kafka-Topic-Partitions-Layout.png)
+
+
 3. What are various components of Kafka
 
 #### What is a consumer group
