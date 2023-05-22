@@ -71,8 +71,17 @@ Offsets are committed by consumers to kafka cluster using auto-commit or by comm
 
 It depends on the Group Id. As long as the consumers belong to different Group Id they can consume from the same topic. In other words, A message within the topic is consumed by only one consumer in a consumer group. In order to process a message by multiple consumers, we need to place it in a different consumer group.
 
+
+
 9. What is the benefit of partitioning?
-10. What is backpressure?
+
+###  What is backpressure?
+
+ The producer generally generates data and sends it to the consumer for processing. However, due to various factors such as limited resources or slower processing capabilities of the consumer, it may not be able to keep up with the rate of data production. To adderess this backpressure comes.
+ 
+ When the consumer becomes overwhelmed or needs to slow down its processing, it sends a backpressure signal to the producer indicating its current capacity or readiness to receive data.
+ 
+ Based on this signal, the producer adjusts its data production rate accordingly. It may slow down, pause, or adjust the volume of data it sends to the consumer until the backpressure signal is lifted.
 
 ### Kafka Monitoring
 1. How are you Monitoring Apache Kafka? Have you used Kafka Manager
