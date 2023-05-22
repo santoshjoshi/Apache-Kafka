@@ -141,14 +141,24 @@ Have documented some of the things here
 
 ### Kafka Producer Configuration or Tuning Kafka Producer
 * Describe the producer configuration you need to take care for configuring Kafka Producer. 
-    * Compression
-    * Compression
-    * Batch size
-    * Sync or Async
-    * linger.ms
-    * retry.backoff.ms
-    * max.in.flight.requests.per.connection
-    * Acks
+
+- **Compression:**
+        compression.type: This configuration determines the compression codec to be used for compressing messages sent by the producer. Supported options include "none" (no compression), "gzip", "snappy", "lz4", and "zstd". Compression can help reduce network bandwidth and storage requirements for Kafka messages.
+
+- **Batch Size:**
+        batch.size: This configuration specifies the maximum size (in bytes) of the message batch that the producer will send to a Kafka broker in a single request. Larger batch sizes generally improve throughput by reducing the overhead of network requests.
+
+- **Sync or Async:**
+        acks: This configuration determines the level of acknowledgment expected from Kafka brokers after producing a message. Options include "all" (leader and replicas acknowledge), "1" (leader acknowledges), and "0" (no acknowledgment). Choosing synchronous or asynchronous mode affects the behavior of the producer.
+
+- **linger.ms:**
+        linger.ms: This configuration introduces a delay (in milliseconds) in the producer to allow more messages to accumulate in the batch before sending them. It helps increase batching efficiency by reducing the number of smaller requests.
+
+- **retry.backoff.ms:**
+        retry.backoff.ms: This configuration specifies the time (in milliseconds) the producer waits before retrying a failed message send attempt. It is used when a transient error occurs, such as a network issue or a Kafka broker being temporarily unavailable.
+
+- **max.in.flight.requests.per.connection:**
+        max.in.flight.requests.per.connection: This configuration sets the maximum number of unacknowledged requests the producer can have outstanding before it stops sending additional requests. It allows controlling the maximum level of parallelism while maintaining the order of messages.
 
 ### Kafka Manager
 1. What is an in-sync replica and how it differs from normal replica
