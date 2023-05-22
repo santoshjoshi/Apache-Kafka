@@ -45,9 +45,18 @@ Below is a diagram showing the relationship between topics and partitions in Kaf
 
 4. How do you create consumer groups
 
-5. What is an offset
-6. What are the different ways to commit an offset?
-7. Does Kafka provides ordering guarantees? 
+#### What is an offset
+An offset is a unique identifier assigned to each message within a partition of a Kafka topic. 
+- It represents the position of a message in the log of a partition.
+- It tracks progress of consumers 
+- whenever a nes message comes the offset is increased by 1
+
+Some important characteristics are :
+
+![image](https://github.com/santoshjoshi/kafka-interview-questions/assets/614170/dcbdc1c8-a557-44dc-842f-ddd26620319b)
+
+7. What are the different ways to commit an offset?
+8. Does Kafka provides ordering guarantees? 
 
 #### How offsets are stored in Kafka
 
