@@ -72,7 +72,6 @@ Offsets are committed by consumers to kafka cluster using auto-commit or by comm
 It depends on the Group Id. As long as the consumers belong to different Group Id they can consume from the same topic. In other words, A message within the topic is consumed by only one consumer in a consumer group. In order to process a message by multiple consumers, we need to place it in a different consumer group.
 
 
-
 9. What is the benefit of partitioning?
 
 ###  What is backpressure?
@@ -86,7 +85,6 @@ It depends on the Group Id. As long as the consumers belong to different Group I
 ### Kafka Monitoring
 1. How are you Monitoring Apache Kafka? Have you used Kafka Manager
 2. Kafka exposes metrics are you using it or plotting it somewhere if yes the how?
-
 
 
 ### Kafka Internals
@@ -140,7 +138,8 @@ Have documented some of the things here
 
 
 ### Kafka Producer Configuration or Tuning Kafka Producer
-* Describe the producer configuration you need to take care for configuring Kafka Producer. 
+
+When creating a Kafka Producer, on need to configure of should know about these onse.
 
 - **Compression:**
         compression.type: This configuration determines the compression codec to be used for compressing messages sent by the producer. Supported options include "none" (no compression), "gzip", "snappy", "lz4", and "zstd". Compression can help reduce network bandwidth and storage requirements for Kafka messages.
