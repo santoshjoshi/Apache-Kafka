@@ -53,7 +53,7 @@ An offset is a unique identifier assigned to each message within a partition of 
 
 Some important characteristics are :
 
-![image](https://github.com/santoshjoshi/kafka-interview-questions/assets/614170/dcbdc1c8-a557-44dc-842f-ddd26620319b)
+![image](https://github.com/santoshjoshi/kafka-interview-questions/assets/614170/ff5a3f73-98e1-48eb-9a38-265fcf5da098)
 
 7. What are the different ways to commit an offset?
 8. Does Kafka provides ordering guarantees? 
