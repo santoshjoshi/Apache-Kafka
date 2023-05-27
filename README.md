@@ -33,7 +33,6 @@ Consumers can read messages from one or more partitions of a topic, in parallel.
 Below is a diagram showing the relationship between topics and partitions in Kafka:
 ![image](https://github.com/santoshjoshi/kafka-interview-questions/assets/614170/9be2f557-3d54-46af-a44c-17a37bdffdc3)
 
-3. What are various components of Kafka
 
 #### What is a consumer group
 
