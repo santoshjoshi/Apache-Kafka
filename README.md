@@ -43,6 +43,9 @@ Below is a diagram showing the relationship between topics and partitions in Kaf
 * Consumer group maintains its offset per topic partition.
 * If there are more consumers then partitions, the extra consumers remain idle until some consumer dies.
 
+![image](https://github.com/santoshjoshi/kafka-interview-questions/assets/614170/916947e5-f1b0-4b4b-9549-936bc7829488)
+
+
 4. How do you create consumer groups
 
 #### What is an offset
