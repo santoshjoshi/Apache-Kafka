@@ -14,6 +14,9 @@ The core components of Kafka are:
 - Kafka brokers: these store and manage the streams of records.
 - Kafka clients: these are used to produce and consume the records.
 
+![image](https://github.com/santoshjoshi/kafka-interview-questions/assets/614170/6a9a4520-bf5d-4234-a4ee-1bf487242a9d)
+
+
 ### What are topics and partitions 
 
 #### Topics
