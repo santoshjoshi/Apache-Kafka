@@ -27,11 +27,8 @@ When a producer publishes a message to a Kafka topic, the message is assigned to
 
 Consumers can read messages from one or more partitions of a topic, in parallel. Each consumer reads from a unique offset in a partition.
 
-
 Below is a diagram showing the relationship between topics and partitions in Kafka:
-
-![Kafka Topics and Partitions](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/07/Kafka-Topic-Partitions-Layout.png)
-
+![image](https://github.com/santoshjoshi/kafka-interview-questions/assets/614170/9be2f557-3d54-46af-a44c-17a37bdffdc3)
 
 3. What are various components of Kafka
 
